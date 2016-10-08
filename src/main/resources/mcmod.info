@@ -1,0 +1,16 @@
+[
+{
+  "modid": "wecanhavenicethings",
+  "name": "We Can Have Nice Things",
+  "description": "A compatibility library so that we can have nice things that play nice together.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Thiakil"],
+  "credits": "The Forge and FML guys",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
