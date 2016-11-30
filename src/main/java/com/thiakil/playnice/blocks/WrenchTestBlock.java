@@ -1,7 +1,7 @@
-package com.thiakil.wecanhavenicethings.blocks;
+package com.thiakil.playnice.blocks;
 
-import com.thiakil.wecanhavenicethings.NiceThings;
-import com.thiakil.wecanhavenicethings.api.capabilities.IWrench;
+import com.thiakil.playnice.PlayNice;
+import com.thiakil.playnice.api.capabilities.IWrench;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -33,7 +33,7 @@ public class WrenchTestBlock extends Block /*implements ITileEntityProvider*/ {
 	
     public WrenchTestBlock() {
         super(Material.ROCK);
-        setUnlocalizedName(NiceThings.MODID + ".wrenchtestblock");
+        setUnlocalizedName(PlayNice.MODID + ".wrenchtestblock");
         setRegistryName("wrenchtestblock");
         GameRegistry.register(this);
         itemblock = new ItemBlock(this);

@@ -1,4 +1,4 @@
-package com.thiakil.wecanhavenicethings.api.capabilities;
+package com.thiakil.playnice.api.capabilities;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;

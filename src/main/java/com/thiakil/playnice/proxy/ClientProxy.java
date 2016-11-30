@@ -1,4 +1,4 @@
-package com.thiakil.wecanhavenicethings.proxy;
+package com.thiakil.playnice.proxy;
 
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 

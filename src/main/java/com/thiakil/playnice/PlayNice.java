@@ -1,7 +1,7 @@
-package com.thiakil.wecanhavenicethings;
+package com.thiakil.playnice;
 
-import com.thiakil.wecanhavenicethings.api.capabilities.IWrench;
-import com.thiakil.wecanhavenicethings.proxy.CommonProxy;
+import com.thiakil.playnice.api.capabilities.IWrench;
+import com.thiakil.playnice.proxy.CommonProxy;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.CapabilityInject;
 import net.minecraftforge.fml.common.Mod;
@@ -15,27 +15,27 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.thiakil.wecanhavenicethings.capabilities.Capabilities;
+import com.thiakil.playnice.capabilities.Capabilities;
 
-@Mod(modid = NiceThings.MODID, version = NiceThings.VERSION)
-public class NiceThings
+@Mod(modid = PlayNice.MODID, version = PlayNice.VERSION)
+public class PlayNice
 {
     public static final String MODID = "wecanhavenicethings";
     public static final String VERSION = "_VERSION_";
     
     private Logger logger;
 
-    @Mod.Instance(NiceThings.MODID)
-    public static NiceThings instance;
+    @Mod.Instance(PlayNice.MODID)
+    public static PlayNice instance;
 
     @SidedProxy(clientSide = "com.thiakil.wecanhavenicethings.proxy.ClientProxy", serverSide = "com.thiakil.wecanhavenicethings.proxy.CommonProxy")
     public static CommonProxy proxy;
     
-    public NiceThings(){
+    public PlayNice(){
     	logger = LogManager.getLogger();
     }
 
-    public static NiceThings instance() { return instance; }
+    public static PlayNice instance() { return instance; }
 
 	@CapabilityInject(IWrench.class)
 	public static Capability<IWrench> WRENCH_CAPABILITY = null;

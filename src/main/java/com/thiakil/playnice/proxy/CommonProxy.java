@@ -1,6 +1,6 @@
-package com.thiakil.wecanhavenicethings.proxy;
+package com.thiakil.playnice.proxy;
 
-import com.thiakil.wecanhavenicethings.blocks.WrenchTestBlock;
+import com.thiakil.playnice.blocks.WrenchTestBlock;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class CommonProxy {

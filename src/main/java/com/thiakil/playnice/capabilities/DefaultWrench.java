@@ -1,6 +1,6 @@
-package com.thiakil.wecanhavenicethings.capabilities;
+package com.thiakil.playnice.capabilities;
 
-import com.thiakil.wecanhavenicethings.api.capabilities.IWrench;
+import com.thiakil.playnice.api.capabilities.IWrench;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.capabilities.CapabilityManager;
