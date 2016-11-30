@@ -1,8 +1,8 @@
 [
 {
-  "modid": "wecanhavenicethings",
-  "name": "We Can Have Nice Things",
-  "description": "A compatibility library so that we can have nice things that play nice together.",
+  "modid": "playnice",
+  "name": "Play Nice",
+  "description": "A compatibility library so that we can have nice things that play nice together. We Can Have Nice Things.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

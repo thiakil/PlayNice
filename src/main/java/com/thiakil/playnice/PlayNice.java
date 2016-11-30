@@ -20,7 +20,7 @@ import com.thiakil.playnice.capabilities.Capabilities;
 @Mod(modid = PlayNice.MODID, version = PlayNice.VERSION)
 public class PlayNice
 {
-    public static final String MODID = "wecanhavenicethings";
+    public static final String MODID = "playnice";
     public static final String VERSION = "_VERSION_";
     
     private Logger logger;
@@ -28,7 +28,7 @@ public class PlayNice
     @Mod.Instance(PlayNice.MODID)
     public static PlayNice instance;
 
-    @SidedProxy(clientSide = "com.thiakil.wecanhavenicethings.proxy.ClientProxy", serverSide = "com.thiakil.wecanhavenicethings.proxy.CommonProxy")
+    @SidedProxy(clientSide = "com.thiakil.playnice.proxy.ClientProxy", serverSide = "com.thiakil.playnice.proxy.CommonProxy")
     public static CommonProxy proxy;
     
     public PlayNice(){
