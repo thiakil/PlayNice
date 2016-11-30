@@ -35,7 +35,7 @@ configFile.withReader {
 
 
 version = "${config.minecraft_version}-${config.mod_version}"
-group= "com.thiakil.wecanhavenicethings" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group= "com.thiakil" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "WeCanHaveNiceThings"
 
 sourceCompatibility = targetCompatibility = "1.8" // Need this here so eclipse task generates correctly.
@@ -142,10 +142,10 @@ artifacts {
 
 
 uploadArchives {
-	if(System.getenv("LOCAL_MAVEN") != null) {
+	//if(System.getenv("LOCAL_MAVEN") != null) {
 		repositories {
 			mavenDeployer {
-				repository(url: "file://" + System.getenv("LOCAL_MAVEN"))
+				repository(url: "file://$projectDir/build/maven/") // + System.getenv("LOCAL_MAVEN"))
 				pom {
 					groupId = project.group
 					version = project.version
@@ -186,7 +186,7 @@ uploadArchives {
 				}
 			}
 		}
-	}
+	//}
 }
 
 idea { module { inheritOutputDirs = true } }
