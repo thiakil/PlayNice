@@ -1,2 +1,6 @@
-* eol=crlf
+#* eol=crlf
 gradlew eol=lf
+*.java eol=crlf
+*.gradle eol=crlf
+*.info  eol=crlf
+*.properties  eol=crlf
