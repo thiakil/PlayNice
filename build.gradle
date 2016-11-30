@@ -36,7 +36,7 @@ configFile.withReader {
 
 version = "${config.minecraft_version}-${config.mod_version}"
 group= "com.thiakil" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "WeCanHaveNiceThings"
+archivesBaseName = "PlayNice"
 
 sourceCompatibility = targetCompatibility = "1.8" // Need this here so eclipse task generates correctly.
 compileJava {
@@ -55,7 +55,7 @@ minecraft {
 	mappings = "${config.mappings_version}"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
-	replaceIn "src/main/java/com/thiakil/wecanhavenicethings/NiceThings.java"
+	replaceIn "src/main/java/com/thiakil/playnice/PlayNice.java"
 	replace "_VERSION_", config.mod_version
 }
 
@@ -126,7 +126,7 @@ task deobfJar(type: Jar, dependsOn: 'jar') {
 task apiJar(type: Jar, dependsOn: 'jar') {
 	from "build/classes/main"
 
-	include 'com/thiakil/wecanhavenicethings/api/**'
+	include 'com/thiakil/playnice/api/**'
 
 	inputs.property "version", project.version
 	inputs.property "mcversion", project.minecraft.version
@@ -158,20 +158,20 @@ uploadArchives {
 						name project.archivesBaseName
 						packaging 'jar'
 						description 'We Can Have Nice Things'
-						url 'https://github.com/thiakil/WeCanHaveNiceThings'
+						url 'https://github.com/thiakil/PlayNice'
 						scm {
-							url 'https://github.com/thiakil/WeCanHaveNiceThings'
-							connection 'scm:git:git@github.com:thiakil/WeCanHaveNiceThings.git'
-							developerConnection 'scm:git:git@github.com:thiakil/WeCanHaveNiceThings.git'
+							url 'https://github.com/thiakil/PlayNice'
+							connection 'scm:git:git@github.com:thiakil/PlayNice.git'
+							developerConnection 'scm:git:git@github.com:thiakil/PlayNice.git'
 						}
 						issueManagement {
 							system 'github'
-							url 'https://github.com/thiakil/WeCanHaveNiceThings/issues'
+							url 'https://github.com/thiakil/PlayNice/issues'
 						}
 						licenses {
 							license {
 								name 'MIT'
-								url 'https://github.com/thiakil/WeCanHaveNiceThings/blob/master/LICENSE'
+								url 'https://github.com/thiakil/PlayNice/blob/master/LICENSE'
 								distribution 'repo'
 							}
 						}
