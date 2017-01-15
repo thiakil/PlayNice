@@ -49,7 +49,7 @@ public class PlayNice
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        Capabilities.registerCapabilities();
+        proxy.init(event);
     }
     
     @EventHandler
